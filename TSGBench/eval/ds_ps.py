@@ -12,9 +12,6 @@ from sklearn.metrics import mean_absolute_error
 import time
 import warnings
 warnings.filterwarnings("ignore")
-from min_max_scaler import MinMaxScaler
-
-
 
 
 
@@ -345,8 +342,7 @@ with mgzip.open('./data/' + dataset_name + '_' + dataset_state + '.pkl', 'rb') a
 	ori_data = pickle.load(f)
 
 
-#with mgzip.open('./data/' + method_name + '/' + dataset_name + '_' + dataset_state + '_gen.pkl', 'rb') as f:
-with open('/home/plau/Documents/AlgoTrade/TSGBench/data/timeGAN/stock_data_gen.pkl', 'rb') as f:
+with mgzip.open('./data/' + method_name + '/' + dataset_name + '_' + dataset_state + '_gen.pkl', 'rb') as f:
 	generated_data = pickle.load(f)
 generated_data = np.array(generated_data)
 
