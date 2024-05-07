@@ -27,7 +27,7 @@ if __name__ == "__main__":
     perc_of_train_used = 100  # 5, 10, 20, 100
     valid_perc = 0.1
     # input_file = f"{dataset}_subsampled_train_perc_{perc_of_train_used}.npz"
-    input_file = f"stocks_subsampled_train_perc_100.npz"
+    input_file = f"1035730_summary_10min_minMax_144.npz"
     full_train_data = utils.get_training_data(data_dir + input_file)
     N, T, D = full_train_data.shape
     print("data shape:", N, T, D)

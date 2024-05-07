@@ -14,7 +14,7 @@ TITLE_FONT_SIZE = 16
 
 def get_training_data(input_file):
     loaded = np.load(input_file)
-    return loaded["data"]
+    return loaded["train_data"]
 
 
 def get_daily_data():
